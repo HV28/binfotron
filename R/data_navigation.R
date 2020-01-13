@@ -40,7 +40,27 @@ get_features_from_gmt_file = function(gmt_path){
 #' @export
 get_gene_set_entrez_human_bgvlab_path = function(){
   return(system.file(file.path("gene_sets", "entrez_ids", "human", "BGVLab", "BGVLab_entrez_human.gmt.txt"), package = "binfotron"))
-  }
+}
+
+
+#' ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#' get_gene_set_hgnc_human_bgvlab_path
+#' ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#' @title get_gene_set_hgnc_human_bgvlab_path 
+#' 
+#' @description 
+#' Returns the path to the hgnc_ids, human, BGVLab signatures in the package library.
+#' 
+#' @param none
+#' 
+#' @return A path to the gmt file.
+#' 
+#' @family gene_signatures
+#' 
+#' @export
+get_gene_set_hgnc_human_bgvlab_path = function(){
+  return(system.file(file.path("gene_sets", "symbol", "human", "BGVLab", "BGVLab_hgnc_human.gmt.txt"), package = "binfotron"))
+}
 
 
 
